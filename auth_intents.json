@@ -1,0 +1,131 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi","Hii","Hey","How are you","Is anyone there?","Hello","Hoi","Helo","Hy"
+      ],
+      "responses": [
+        "Hey :-). How can I help you ?",
+        "Hello, thanks for visiting.What can I do for you ? ",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "wish",
+      "patterns": [
+        "Good Morning","Good Day","Good Evening","Good Night","Good Afternoon"
+      ],
+      "responses": [
+        "Good Day ! "
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["Who are you ?", 
+        "Who is this", "May I know you ?","Who am I chatting with ? ",  "Tell me about you","Who are you"],
+      "responses": [
+        "Hi.I am your personal assistant @ Weinsoft. How can I help you ?"
+      ]
+    },
+    {
+      "tag": "details",
+      "patterns": ["what is your core", 
+        "your technical details", "code ?","which language ",  "Tell me about you"],
+      "responses": [
+        "I am chatbot coded in Python",
+        "My core is Python",
+        "Am coded in Python"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","No","Nope"],
+      "responses": ["Happy to help!", "Any time!"]
+    },
+    {
+      "tag": "values",
+      "patterns": [
+        "Do you have any ethics ?",
+        "Do you have any values in company ?",
+        "What are your policies ?",
+        "What is your Motto ?",
+        "Do you have a Vison ? ? "," What drives you"
+      ],
+      "responses": [
+        "At Weinsoft labs, we aspire to be an Illustrious IT company across the world.",
+        "We keep an apparent focus on high quality, timely delivery and cost effective solutions","Fulfill & Exceed the expectations of our Clients. We strive hard to make our client's business stand out from the rest of the crowd"
+      ]
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "Yes","Ofcourse","Sure","Yup","Yep","ok","yes"
+      ],
+      "responses": [
+        "Great"
+      ]
+    },
+    {
+      "tag": "login",
+      "patterns": ["I need to login","login","log me in"," i want to login"],
+      "responses": [
+        "You are Logged in"
+      ]
+    },
+    {
+      "tag": "logout",
+      "patterns": ["logout","quit","exit"],
+      "responses": [
+        "Logout Success !!"
+      ]
+    },
+    {
+      "tag": "updates",
+      "patterns": ["Latest news","Recent updates","Updates from CEO","News from HR"," Anything new ? "],
+      "responses": [
+        "Let me check"
+      ]
+    },
+    {
+      "tag": "leave",
+      "patterns": ["I need a leave","apply for leave","i want to apply for leave","Can i get leave","leave"],
+      "responses": [
+        "Let me process your leave application"
+      ]
+    },
+    {
+      "tag": "leave_status",
+      "patterns": ["leave status ?","what is status of leave applied","update on leave","leave approved ?"],
+      "responses": [
+        "Let me  check"
+      ]
+    },
+
+    {
+      "tag": "project",
+      "patterns": ["what is my project","Project deadline","Project submission date","Details of project"],
+      "responses": [
+        "Let me get the details"
+      ]
+    },
+    {
+      "tag": "EOD",
+      "patterns": ["EOD","EOD Report","Send EOD","Send EOD Report","End of day report","Send End of day","email EOD,","email end of day report"],
+      "responses": [
+        "Sure!. Tell me your report summary"
+      ]
+    }
+
+  ]
+}

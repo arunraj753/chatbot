@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="{% static 'chat/css/messenger.css' %}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" </head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#">ABC</a>
+      
+  <ul class="navbar-nav ">
+    <li>
+     
+  
+    {% if request.user.is_authenticated %}
+    
+
+
+    </li>
+      
+
+    <li class="nav-item dropdown">
+      <a class="active nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {% if request.user.first_name %}
+              {{request.user.first_name}}
+          {% else %}
+              {{request.user.username}}
+          {% endif %}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="#">Logout</a>
+
+      </div>
+    </li>
+  {% else %}
+  
+    <li class="navbar-item active">
+      <a class="nav-link" href="#">Guest</a>
+    </li>
+  {% endif %}
+</ul>
+</div>
+</nav>
+<div class="container">
+	<div class="row ">
+		<div class="col-8">
+			<h2 > <span style="font-weight:bold;">ABC-Demo </span></h2>
+			<h4><span style="font-weight:bold;">The Ultimate App Development company</span></h4>
+			<br>
+			<p style="font-size:20px">We are and international IT company with several offices across India. We design and develop mobile and web applications.Our app developers have the expertise to make your dream product a reality.</p>
+			<button type='button' class="btn btn-primary" > <a href="#" style="color:White">Let's Talk</a></button>
+			
+		</div>
+		<div class="col-4">
+			<img src="{% static 'chat/images/mob.png' %}"style="width:276px;height:520px;">
+			
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="card-columns">
+		
+		<div class="card" style="width: 18rem;">
+			
+			<div class="card-body">
+				<h5 class="card-title">Web Applications</h5>
+				<p class="card-text"><p class="card-text"><p class="card-text">As a best website development company, we have dedicated team of professionals to create powerful websites</p>
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+		
+			<div class="card-body">
+				<h5 class="card-title">UX Design</h5>
+				<p class="card-text">Our UX designers combine market research, product development, strategy and design to create seamless user experiences for products, services and processes.</p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+			<div class="card-body">
+				<h5 class="card-title">Android Apps</h5>
+				<p class="card-text">Our expert team uses cutting technologies to build custom Android applications that are robust and stable</p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+			
+			<div class="card-body">
+				<h5 class="card-title">Ecommerce Development</h5>
+				<p class="card-text">Our e-commerce development team are focused on building solutions for your retail store that intrests customer engagement</p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+
+			<div class="card-body">
+				<h5 class="card-title">Cross Platform Apps</h5>
+				<p class="card-text">Our Cross platform developers create applications that look and feel truly native on any platform </p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+
+			<div class="card-body">
+				<h5 class="card-title">iOS Apps</h5>
+				<p class="card-text">We do have a dedeicated team of iOS developers to build fast and stable apps for your Apple devices.</p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+
+			<div class="card-body">
+				<h5 class="card-title">Virtual Assitants</h5>
+				<p class="card-text">Build the next generation chatbots and virtual assistants </p>
+				
+			</div>
+		</div>
+
+		<div class="card" style="width: 18rem;">
+
+			<div class="card-body">
+				<h5 class="card-title">IoT</h5>
+				<p class="card-text">We are one stop internet of things development companies for all your IoT development related requirements therefore we develop IoT gateway for your app. </p>
+				
+			</div>
+		</div>
+
+	</div>
+	</div>
+	<div style="background:#3333ff">
+		<div class="row justify-content-center" >
+			<h1 class="text-white">Ready to get Started ? </h1>
+		</div>
+		<p class="text-white">  When you choose app developers from ABC, you sign up for a great team that knows A-Z of software development and can deliver you a perfect balance between cost, time & quality. Our expert team are capable to convert your ideas in to real apps, meeting your business challenges in minimum possible time.</p>
+		<div class="row justify-content-center" >
+			<button type='button' class="btn btn-primary" > <a href="#"style="color:White">GET FREE QUOTE</a></button>
+
+		</div>
+		
+		<br>
+
+	</div>
+</div>
+
+
+  <button id='chatbtn' class="open-button" onclick="popup()">Chat</button>
+
+  <div class='chat-form'id ='chatform'>
+    <div class='form-container'>
+        <div class="container-fluid">
+
+          <div class="row justify-content-center">
+				
+              <div class="card ">
+								<div class="box-header">WeinSoft</div> 
+                <div id='chatbox' class="card-body">
+                </div> 
+                <div class="card-body">
+                </div> 
+                <input class="stick" id="input-content" placeholder="Send a Message"></input>
+              </div> 
+          </div>   
+        </div>
+     </div>
+  </div>
+
+
+  <script>
+		console.log("hey")
+		var token='{{csrf_token}}'
+		console.log(token)
+	</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="{% static 'chat/js/messenger.js' %}"></script>
+</body>
+
+</html>

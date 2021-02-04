@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'chat/css/style.css' %}">
+</head>
+<body>
+    <header>Chat with Chitti</header>
+    <section class="main">
+            <div class="user-area">
+                <img src="{% static 'chat/images/user.png' %}">
+            </div>
+            <div class="chatarea-main">
+                <div class="chatarea-outer">
+                    <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div>
+                    <div class="chatarea-inner chatbot">Hello hi, how area you, i am good. What about you!</div>
+                    <div class="chatarea-inner user">Hello hi, how area you, i am good. What about you!</div> 
+                    
+                </div>
+                <form>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe">
+                </form>
+            </div>    
+            <div class="chatbot-area">
+                <img src="{% static 'chat/images/chatbot.png' %}">
+            </div>
+        <button id="mic"><i class="flaticon-microphone"></i></button>
+    </section>
+    <script src="{% static 'chat/js/main.js' %}"></script>
+</body>
+</html>

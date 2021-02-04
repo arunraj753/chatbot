@@ -1,0 +1,201 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi","Hii","Hey","How are you","Is anyone there?","Hello","Good day"
+      ],
+      "responses": [
+        "Hey. How can I help you ?",
+        "Hello. What can I do for you ? ",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "wish",
+      "patterns": [
+        "Good Morning","Good Day","Good Evening","Good Night","Good Afternoon"
+      ],
+      "responses": [
+        "Good Day ! "
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["Who are you ?", 
+        "Who is this", "May I know you ?","Who am I chatting with ? ",  "Tell me about you"],
+      "responses": [
+        "Hi.I am IT chatbot of Weinsoft. How can I help you ?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you","No","Nope","Later","May be later"],
+      "responses": ["Happy to help!", "Any time!"]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Location ? ",
+        "Where is your location ?",
+        "Tell me your Address ",
+        "Where is your company ?",
+        "where are you",
+        "How can I reach your company ? ",
+        "Your contact details ? ",
+        "Email address ?",
+        "How to contact"
+      ],
+      "responses": [
+        "Our Address - Weinsoft Labs Pvt Ltd-Cochin. e-mail:team@weinsoft.in"
+      ]
+    },
+    {
+      "tag": "values",
+      "patterns": [
+        "Do you have any ethics ?",
+        "Do you have any values in company ?",
+        "What are your policies ?",
+        "What is your Motto ?",
+        "Do you have a Vison ? ? "
+      ],
+      "responses": [
+        "At Weinsoft labs, we aspire to be an Illustrious IT company across the world."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "shortcuts",
+        "i need a help",
+        "queries",
+        "I have a question "
+      ],
+      "responses": [
+        "Happy to Help"
+      ]
+    },
+    {
+      "tag": "enquiry",
+      "patterns": [
+        "What is your company ?",
+        "Do you create websites ?",
+        "Do you provide Mobile App Development ? ",
+        "Services ? ",
+        "What are your services ?",
+        "I need a website","I want a service","I want a website",
+        "I need a mobile app","weinsoft",
+        "i need an android application","i need android app","looking for android app","need ios app","looking for ecommerce app","need a blog app ","looking for portfolio web","need a social network"
+      ],
+      "responses": [
+        "We provide web design & development services, mobile application development and web hosting services"
+      ]
+    },
+    {
+      "tag": "interested",
+      "patterns": [
+        "Yes","Ofcourse","Sure","Yup","Yep"
+      ],
+      "responses": [
+        "Awesome. Let's start by getting your email address"
+      ]
+    },
+    {
+      "tag": "career",
+      "patterns": [
+        "Any jobs available",
+        "Tell me about career oppurtunities",
+        "Any open positions ?",
+        "Job vacancy available ?"
+      ],
+      "responses": [
+        "Let me check the availability"
+      ]
+    },
+    {
+      "tag": "ecommerce",
+      "patterns": ["What is an ecommerce website",
+        "what is ecommerce","ecom web"],
+      "responses": [
+        "An e-commerce website is an online shopping destination where users can purchase products or services from your company"
+      ]
+    },
+    {
+      "tag": "blog",
+      "patterns": ["What is blog website",
+        "what is blog","blog web"],
+      "responses": [
+        "A blog features regularly updated articles, photos and videos. Blogs started with more casual, personal content compared to magazines. "
+      ]
+    },
+    {
+      "tag": "portfolio",
+      "patterns": ["What is portfolio website",
+        "what is portfolio","portfolio web"],
+      "responses": [
+        "A portfolio website allows creative professionals a place for showcasing their best work"
+      ]
+    },
+    {
+      "tag": "login",
+      "patterns": ["I need to login","login","log","log me in"," i want to login"],
+      "responses": [
+        "Sure. Tell me your username"
+      ]
+    },
+    {
+      "tag": "wordpress",
+      "patterns": ["wordpress","word press","wordpress creation","what is wordpress"],
+      "responses": [
+        "We provide WordPress customization service which is thorough enough to create a perfect ensemble of looks and functions"
+      ]
+    },
+    {
+      "tag": "cloud",
+      "patterns": ["what are cloud services","what is cloud","Tell me about cloud","cloud computing","what is cloud computing"],
+      "responses": [
+        "Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user"
+      ]
+    },
+    {
+      "tag": "IOT",
+      "patterns": ["what is internet of things","what is Iot"," iot"],
+      "responses": [
+        "The Internet of things describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the Internet"
+      ]
+    },
+    {
+      "tag": "android",
+      "patterns": ["what is android","android","android os"],
+      "responses": [
+        "Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets"
+      ]
+    },
+    {
+      "tag": "iOS",
+      "patterns": ["what is ios","apple operating system","Iphone os","ios","apple os"],
+      "responses": [
+        "iOS is a mobile operating system created and developed by Apple Inc. exclusively for its hardware that powers many of the company's mobile devices, including the iPhone and iPod Touch"
+      ]
+    },
+    {
+      "tag": "reset",
+      "patterns": ["Forgot Password","Reset Password","Unable to login"],
+      "responses": [
+        "I can help. Please enter your email address."
+      ]
+    }
+    
+  ]
+}

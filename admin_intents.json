@@ -1,0 +1,122 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi","Hii","Hey","How are you","Is anyone there?","Hello","Hoi","Helo","Hy"
+      ],
+      "responses": [
+        "Hey :-). How can I help you ?",
+        "Hello, thanks for visiting.What can I do for you ? ",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "wish",
+      "patterns": [
+        "Good Morning","Good Day","Good Evening","Good Night","Good Afternoon"
+      ],
+      "responses": [
+        "Good Day ! "
+      ]
+    },
+    
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!","No","Nope"],
+      "responses": ["Happy to help!", "Any time!"]
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "Yes","Ofcourse","Sure","Yup","Yep","ok","yes"
+      ],
+      "responses": [
+        "Great"
+      ]
+    },
+    {
+      "tag": "logout",
+      "patterns": ["logout","quit","exit"],
+      "responses": [
+        "Logout Success !!"
+      ]
+    },
+    {
+      "tag": "leaves_applied",
+      "patterns": ["leave status ?","leaves","new requests","Next leave","All requests","All applications"],
+      "responses": [
+        "Let me  check Mr Admin"
+      ]
+    },
+    {
+      "tag": "announcement",
+      "patterns": ["Add an update","add a circular","Announcement","circular","add announcement"],
+      "responses": [
+        "Sure. Tell me the content"
+      ]
+    },
+    {
+      "tag": "approve",
+      "patterns": ["Approve","ok","Sanction"],
+      "responses": [
+        "Approved","Sanctioned"
+      ]
+    },
+    {
+      "tag": "reject",
+      "patterns": ["Reject","Not now","Later","No","Deny"],
+      "responses": [
+        "Rejected","Not Sanctioned"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "shortcuts",
+        "i need a help",
+        "queries",
+        "I have a question "
+      ],
+      "responses": [
+        "Happy to Help"
+      ]
+    },{
+      "tag": "addEmployee",
+      "patterns": [
+        "create new employee",
+        "create new user",
+        "create employee",
+        "new employ",
+        "create employe"
+      ],
+      "responses": [
+        "Sure. What is the employer's email ?"
+      ]
+    },
+    {
+      "tag": "addProject",
+      "patterns": [
+        "create new project",
+        "assign new project",
+        "assign project"
+      ],
+      "responses": [
+        "Sure. Whom you would like to assign the project ?"
+      ]
+    }
+
+
+  ]
+}
